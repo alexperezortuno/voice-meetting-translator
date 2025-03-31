@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Voice Meeting Translator",
+  "description": "Transcribe and translate voices from meetings using ChatGPT.",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/images/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>",
+    "https://api.openai.com/*"
+  ]
+}
